@@ -1,0 +1,8 @@
+* Some Notes on Mma.
+
+** dir[]
+   Usually, we make a long long derive, then for a while, we forget what quantity some letter
+   denoting for. This happens generally not only in programming, but also in deriving by hands.
+   As what python does, we can construct a list called "dir", which contains such information of
+   each notation we use. Such as '{...{\tau_N, "the conformal time at N e-foldings"}...}'. And
+   function like 'dir[]' can be used for searching such things within this 'dir' list.

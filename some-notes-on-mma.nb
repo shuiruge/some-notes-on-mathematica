@@ -1,0 +1,150 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3834,        141]
+NotebookOptionsPosition[      2750,         98]
+NotebookOutlinePosition[      3109,        114]
+CellTagsIndexPosition[      3066,        111]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Code Folding", "Section",
+ CellChangeTimes->{{3.616493357113189*^9, 3.616493362447769*^9}}],
+
+Cell["Here is the codes", "Text",
+ CellChangeTimes->{{3.616492936381853*^9, 3.616492940059453*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"slfaj", " ", "=", " ", "1"}]], "Input",
+ CellChangeTimes->{{3.616492944787902*^9, 3.616492947246445*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.616492949247879*^9, 3.61649300845549*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"afa", " ", "=", " ", "2"}]], "Input",
+ CellChangeTimes->{{3.616492953047148*^9, 3.616492954396713*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.616492955701396*^9, 3.61649301049369*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Now, fold the above code, with the title being the first cell:\
+\>", "Text",
+ CellChangeTimes->{{3.616493462224764*^9, 3.616493494294593*^9}}],
+
+Cell["\<\
+Method: select \[OpenCurlyDoubleQuote]Cell \[Rule] Grouping \[Rule] Manual \
+Grouping\[CloseCurlyDoubleQuote], then group them, which returns:\
+\>", "Text",
+ CellChangeTimes->{{3.616493637952906*^9, 3.616493698429293*^9}, {
+  3.616493741177417*^9, 3.616493744324667*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Here is the codes", "Text",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.},
+ CellChangeTimes->{{3.616492936381853*^9, 3.616492940059453*^9}, 
+   3.616493563688507*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"slfaj", " ", "=", " ", "1"}]], "Input",
+ CellGroupingRules->{GroupTogetherGrouping, 10001.},
+ CellChangeTimes->{{3.616492944787902*^9, 3.616492947246445*^9}, {
+  3.61649356368921*^9, 3.616493588870244*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellGroupingRules->{GroupTogetherGrouping, 10001.},
+ CellChangeTimes->{
+  3.616492949247879*^9, 3.61649300845549*^9, {3.616493563689697*^9, 
+   3.616493588871164*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"afa", " ", "=", " ", "2"}]], "Input",
+ CellChangeTimes->{{3.616492953047148*^9, 3.616492954396713*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.616492955701396*^9, 3.61649301049369*^9, 
+  3.616493753474375*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+CellGrouping->Manual,
+WindowSize->{740, 455},
+WindowMargins->{{Automatic, 109}, {Automatic, 28}},
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 97, 1, 72, "Section"],
+Cell[679, 25, 99, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[803, 30, 129, 2, 30, "Input"],
+Cell[935, 34, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1063, 40, 127, 2, 30, "Input"],
+Cell[1193, 44, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1321, 50, 152, 3, 30, "Text"],
+Cell[1476, 55, 281, 5, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1782, 64, 178, 3, 30, "Text",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.}],
+Cell[CellGroupData[{
+Cell[1985, 71, 230, 4, 30, "Input",
+ CellGroupingRules->{GroupTogetherGrouping, 10001.}],
+Cell[2218, 77, 197, 4, 30, "Output",
+ CellGroupingRules->{GroupTogetherGrouping, 10001.}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2452, 86, 127, 2, 30, "Input"],
+Cell[2582, 90, 116, 2, 30, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
