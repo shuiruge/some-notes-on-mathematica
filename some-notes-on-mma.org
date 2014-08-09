@@ -6,3 +6,13 @@
    As what python does, we can construct a list called "dir", which contains such information of
    each notation we use. Such as '{...{\tau_N, "the conformal time at N e-foldings"}...}'. And
    function like 'dir[]' can be used for searching such things within this 'dir' list.
+
+** On emacs
+   Maybe I will decide to use mma in emacs. But, I'm still not sure of this, since, in mma, you
+   can input the code with a 'mathematical' way, rather than just, for instance, "Integrate[...]",
+   "x^2", fractions "a/b", the composition of them "((a+b)/(c+d))^2", the enlargement of
+   parethesis (see the previous one), and so on.
+
+   In fact, the mma's notebook can be view as a convertion tool, which convert the language that
+   is COMFORTABLE for human, FOR MAKING A PROPER DECISION IN THE NEXT STEP OF THINKING, to the one
+   that is "COMFORTABLE" for the compiler.
