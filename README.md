@@ -1,7 +1,7 @@
-some-useful-mathematica-funtions
+some-notes-on-mathematica
 ================================
 
-Here are Mathematica functions that is useful for me.
+Here are Mathematica notes and functions that are useful for me.
 
 ---
 
