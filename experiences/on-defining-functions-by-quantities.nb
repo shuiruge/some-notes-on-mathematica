@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      8714,        320]
-NotebookOptionsPosition[      6537,        236]
-NotebookOutlinePosition[      7126,        260]
-CellTagsIndexPosition[      7042,        255]
+NotebookDataLength[      8830,        322]
+NotebookOptionsPosition[      6626,        237]
+NotebookOutlinePosition[      7241,        262]
+CellTagsIndexPosition[      7157,        257]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,20 +21,21 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["\<\
-Here is trick on the definition of a function by a quantity.\
+Here is a trick on the definition of a function by a (physical) quantity.\
 \>", "Text",
- CellChangeTimes->{{3.616558964833778*^9, 3.616558987234283*^9}}],
+ CellChangeTimes->{{3.616558964833778*^9, 3.616558987234283*^9}, {
+  3.616639200035725*^9, 3.616639211779798*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
- "Usually, we write down a quantity ",
+ "Usually, we write down a (physical) quantity ",
  Cell[BoxData[
-  FormBox["a", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["a", TraditionalForm]]],
  " as"
 }], "Text",
- CellChangeTimes->{{3.616558988997044*^9, 3.616559037450036*^9}}],
+ CellChangeTimes->{{3.616558988997044*^9, 3.616559037450036*^9}, {
+  3.616639165352583*^9, 3.616639171606382*^9}}],
 
 Cell[CellGroupData[{
 
@@ -235,8 +236,9 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{740, 455},
-WindowMargins->{{Automatic, 109}, {Automatic, 28}},
+WindowMargins->{{Automatic, 108}, {Automatic, 4}},
 ShowSelection->True,
+CellLabelAutoDelete->True,
 FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
 StyleDefinitions->"Default.nb"
 ]
@@ -246,77 +248,77 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Info3616587961-8468694"->{
-  Cell[5463, 201, 118, 2, 42, "Print",
+  Cell[5552, 202, 118, 2, 42, "Print",
    CellTags->"Info3616587961-8468694"],
-  Cell[5584, 205, 901, 25, 23, "Print",
+  Cell[5673, 206, 901, 25, 23, "Print",
    CellTags->"Info3616587961-8468694"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info3616587961-8468694", 6859, 247}
+ {"Info3616587961-8468694", 6974, 249}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 150, 3, 30, "Text"],
+Cell[579, 22, 212, 4, 30, "Text"],
 Cell[CellGroupData[{
-Cell[754, 29, 222, 7, 30, "Text"],
+Cell[816, 30, 249, 7, 30, "Text"],
 Cell[CellGroupData[{
-Cell[1001, 40, 149, 3, 30, "Input"],
-Cell[1153, 45, 189, 4, 30, "Output"]
+Cell[1090, 41, 149, 3, 30, "Input"],
+Cell[1242, 46, 189, 4, 30, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1391, 55, 184, 4, 30, "Text"],
+Cell[1480, 56, 184, 4, 30, "Text"],
 Cell[CellGroupData[{
-Cell[1600, 63, 111, 1, 30, "Text"],
-Cell[1714, 66, 127, 2, 30, "Input"],
-Cell[1844, 70, 237, 5, 30, "Input"],
+Cell[1689, 64, 111, 1, 30, "Text"],
+Cell[1803, 67, 127, 2, 30, "Input"],
+Cell[1933, 71, 237, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[2106, 79, 102, 1, 30, "Text"],
+Cell[2195, 80, 102, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[2233, 84, 120, 2, 30, "Input"],
-Cell[2356, 88, 138, 3, 30, "Output"]
+Cell[2322, 85, 120, 2, 30, "Input"],
+Cell[2445, 89, 138, 3, 30, "Output"]
 }, Open  ]],
-Cell[2509, 94, 97, 1, 30, "Text"],
+Cell[2598, 95, 97, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[2631, 99, 120, 2, 30, "Input"],
-Cell[2754, 103, 137, 3, 30, "Output"]
+Cell[2720, 100, 120, 2, 30, "Input"],
+Cell[2843, 104, 137, 3, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2928, 111, 120, 2, 30, "Input"],
-Cell[3051, 115, 138, 3, 30, "Output"]
+Cell[3017, 112, 120, 2, 30, "Input"],
+Cell[3140, 116, 138, 3, 30, "Output"]
 }, Open  ]],
-Cell[3204, 121, 98, 1, 30, "Text"]
+Cell[3293, 122, 98, 1, 30, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3351, 128, 143, 3, 30, "Text"],
-Cell[3497, 133, 125, 2, 30, "Input"],
-Cell[3625, 137, 388, 8, 30, "Input"],
+Cell[3440, 129, 143, 3, 30, "Text"],
+Cell[3586, 134, 125, 2, 30, "Input"],
+Cell[3714, 138, 388, 8, 30, "Input"],
 Cell[CellGroupData[{
-Cell[4038, 149, 105, 1, 30, "Text"],
+Cell[4127, 150, 105, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[4168, 154, 119, 2, 30, "Input"],
-Cell[4290, 158, 237, 5, 30, "Output"]
+Cell[4257, 155, 119, 2, 30, "Input"],
+Cell[4379, 159, 237, 5, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4564, 168, 120, 2, 30, "Input"],
-Cell[4687, 172, 213, 5, 30, "Output"]
+Cell[4653, 169, 120, 2, 30, "Input"],
+Cell[4776, 173, 213, 5, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4937, 182, 119, 2, 30, "Input"],
-Cell[5059, 186, 139, 2, 30, "Output"]
+Cell[5026, 183, 119, 2, 30, "Input"],
+Cell[5148, 187, 139, 2, 30, "Output"]
 }, Open  ]],
-Cell[5213, 191, 100, 1, 30, "Text"]
+Cell[5302, 192, 100, 1, 30, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5350, 197, 110, 2, 30, "Input"],
-Cell[5463, 201, 118, 2, 42, "Print",
+Cell[5439, 198, 110, 2, 30, "Input"],
+Cell[5552, 202, 118, 2, 42, "Print",
  CellTags->"Info3616587961-8468694"],
-Cell[5584, 205, 901, 25, 23, "Print",
+Cell[5673, 206, 901, 25, 23, "Print",
  CellTags->"Info3616587961-8468694"]
 }, Open  ]]
 }, Open  ]]

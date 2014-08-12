@@ -1,0 +1,395 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11343,        386]
+NotebookOptionsPosition[      9716,        328]
+NotebookOutlinePosition[     10053,        343]
+CellTagsIndexPosition[     10010,        340]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"$Assumptions", "=", "True"}], ";"}]], "Input",
+ CellChangeTimes->{{3.616800606092499*^9, 3.616800607578827*^9}}],
+
+Cell["\<\
+If we take some operations like this:\
+\>", "Text",
+ CellChangeTimes->{{3.616800529705547*^9, 3.616800544439685*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"U", "[", "\[Phi]_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["\[Gamma]", 
+     RowBox[{"4", "-", "p"}]], "p"], 
+   SuperscriptBox["\[CapitalLambda]", "p"], 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        FractionBox[
+         SuperscriptBox["\[Phi]", "2"], 
+         SuperscriptBox["\[CapitalLambda]", "2"]]}], ")"}], 
+      FractionBox["p", "2"]], " ", "-", " ", "1"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{3.616800569582714*^9}],
+
+Cell["\<\
+and take the limit \[CapitalLambda] \[Rule] 0, by which you hope\
+\>", "Text",
+ CellChangeTimes->{{3.616800573960223*^9, 3.616800592767234*^9}, {
+  3.616800667199074*^9, 3.616800683457837*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[Gamma]", 
+    RowBox[{"4", "-", "p"}]], " ", 
+   SuperscriptBox["\[Phi]", "p"]}], "p"]], "Text",
+ CellChangeTimes->{3.6168006983921*^9},
+ FontWeight->"Plain"],
+
+Cell["But,", "Text",
+ CellChangeTimes->{{3.616800703278323*^9, 3.616800704363921*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"U", "[", "\[Phi]", "]"}], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[Gamma]", 
+      RowBox[{"4", "-", "p"}]], " ", 
+     SuperscriptBox["\[CapitalLambda]", "p"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          FractionBox[
+           SuperscriptBox["\[Phi]", "2"], 
+           SuperscriptBox["\[CapitalLambda]", "2"]]}], ")"}], 
+        RowBox[{"p", "/", "2"}]]}], ")"}]}], "p"], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.616800611750138*^9}]
+}, Open  ]],
+
+Cell["\<\
+Mathematica will do nothing.
+
+The reason is simple, which is the p can be negative, by which \
+\>", "Text",
+ CellChangeTimes->{{3.616800616356005*^9, 3.616800662122399*^9}, {
+  3.616800710401113*^9, 3.616800718608601*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"U", "[", "\[Phi]", "]"}], "//", "Expand"}]], "Input",
+ CellChangeTimes->{{3.616800730542289*^9, 3.616800757864392*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[Gamma]", 
+      RowBox[{"4", "-", "p"}]], " ", 
+     SuperscriptBox["\[CapitalLambda]", "p"]}], "p"]}], "+", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["\[Gamma]", 
+     RowBox[{"4", "-", "p"}]], " ", 
+    SuperscriptBox["\[CapitalLambda]", "p"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       FractionBox[
+        SuperscriptBox["\[Phi]", "2"], 
+        SuperscriptBox["\[CapitalLambda]", "2"]]}], ")"}], 
+     RowBox[{"p", "/", "2"}]]}], "p"]}]], "Output",
+ CellChangeTimes->{{3.616800733053099*^9, 3.616800758638929*^9}}]
+}, Open  ]],
+
+Cell["\<\
+, for instance, the first term will be divergent.\
+\>", "Text",
+ CellChangeTimes->{{3.616800752676681*^9, 3.616800780896392*^9}}],
+
+Cell[TextData[{
+ "So, we shall use the \[OpenCurlyQuote]$Assumptions\[CloseCurlyQuote] \
+configuration of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.616800791075412*^9, 3.616800822740659*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"$Assumptions", "=", 
+   RowBox[{"p", ">", "0"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.616800832075532*^9}],
+
+Cell["Then we do it again:", "Text",
+ CellChangeTimes->{{3.616800835314533*^9, 3.616800842513038*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"U", "[", "\[Phi]", "]"}], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[Gamma]", 
+    RowBox[{"4", "-", "p"}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["\[Phi]", "2"], ")"}], 
+    RowBox[{"p", "/", "2"}]]}], "p"]], "Output",
+ CellChangeTimes->{3.616800857233689*^9}]
+}, Open  ]],
+
+Cell["\<\
+It\[CloseCurlyQuote]s better, but still not what we hope, so\
+\>", "Text",
+ CellChangeTimes->{{3.616800866029748*^9, 3.616800885250385*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", "=", 
+    RowBox[{
+     RowBox[{"p", ">", "0"}], "&&", 
+     RowBox[{"\[Phi]", ">", "0"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"U", "[", "\[Phi]", "]"}], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.616800902414859*^9, 3.616800903080451*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[Gamma]", 
+    RowBox[{"4", "-", "p"}]], " ", 
+   SuperscriptBox["\[Phi]", "p"]}], "p"]], "Output",
+ CellChangeTimes->{3.616800903755803*^9}]
+}, Open  ]],
+
+Cell["Get it!", "Text",
+ CellChangeTimes->{{3.616800907370626*^9, 3.6168009086196*^9}}],
+
+Cell["Remark that", "Text",
+ CellChangeTimes->{{3.616800922561395*^9, 3.616800931861261*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"$Assumptions", "=", "True"}], ";"}]], "Input",
+ CellChangeTimes->{{3.61680094461569*^9, 3.616800947347766*^9}}],
+
+Cell["\<\
+will erase the configurations on $Assumptions. Then, as you see,\
+\>", "Text",
+ CellChangeTimes->{{3.616800949953523*^9, 3.616800985058402*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"U", "[", "\[Phi]", "]"}], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.616800989889565*^9}],
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[Gamma]", 
+      RowBox[{"4", "-", "p"}]], " ", 
+     SuperscriptBox["\[CapitalLambda]", "p"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          FractionBox[
+           SuperscriptBox["\[Phi]", "2"], 
+           SuperscriptBox["\[CapitalLambda]", "2"]]}], ")"}], 
+        RowBox[{"p", "/", "2"}]]}], ")"}]}], "p"], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.616800990589383*^9, 3.616800996307789*^9}}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["You see that Mathematica HELPS you think of your \
+analysis more rigorously. For instance, here, because of our humanity \
+carelessness, we first omited the possibility of the negativeness of the p, \
+which may, in the next step, ruin our analysis. But Mathematica remind us of \
+this fatal point, gently.",
+ FontWeight->"Bold",
+ FontSlant->"Italic",
+ FontColor->RGBColor[
+  0.01568627450980392, 0.6352941176470588, 0.27450980392156865`]]], "Text",
+ CellChangeTimes->{{3.616801085316053*^9, 3.616801295328536*^9}, {
+  3.616801355918324*^9, 3.616801411522072*^9}, {3.616801455451614*^9, 
+  3.616801502969727*^9}, {3.616801636267126*^9, 3.616801656787191*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Generally, for clearness, it\[CloseCurlyQuote]s \
+better to write them together:",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.616799752075607*^9, 3.616799788561701*^9}, {
+  3.616801006785626*^9, 3.616801032722132*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"$Assumptions", "=", 
+    RowBox[{
+     RowBox[{"p", ">", "0"}], "&&", 
+     RowBox[{"\[Phi]", ">", "0"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"U", "[", "\[Phi]_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["\[Gamma]", 
+     RowBox[{"4", "-", "p"}]], "p"], 
+   SuperscriptBox["\[CapitalLambda]", "p"], 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        FractionBox[
+         SuperscriptBox["\[Phi]", "2"], 
+         SuperscriptBox["\[CapitalLambda]", "2"]]}], ")"}], 
+      FractionBox["p", "2"]], " ", "-", " ", "1"}], ")"}]}]}]}], "Input",
+ CellChangeTimes->{{3.616799795571495*^9, 3.616799864747886*^9}, {
+  3.616799972868292*^9, 3.6167999892496*^9}, {3.616800055804381*^9, 
+  3.616800059738206*^9}, {3.616800199371637*^9, 3.616800202029363*^9}}],
+
+Cell["Then,", "Text",
+ CellChangeTimes->{{3.616801049428012*^9, 3.616801050794047*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"U", "[", "\[Phi]", "]"}], ",", 
+   RowBox[{"\[CapitalLambda]", "\[Rule]", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.616800082059023*^9, 3.616800084169119*^9}, {
+  3.616800123808052*^9, 3.616800196863973*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[Gamma]", 
+    RowBox[{"4", "-", "p"}]], " ", 
+   SuperscriptBox["\[Phi]", "p"]}], "p"]], "Output",
+ CellChangeTimes->{
+  3.616800085889489*^9, {3.616800139939083*^9, 3.616800170314156*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 455},
+WindowMargins->{{Automatic, 109}, {Automatic, 28}},
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 147, 3, 30, "Input"],
+Cell[707, 25, 127, 3, 30, "Text"],
+Cell[837, 30, 555, 17, 67, "Input"],
+Cell[1395, 49, 203, 4, 30, "Text"],
+Cell[1601, 55, 218, 7, 58, "Text"],
+Cell[1822, 64, 86, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1933, 69, 160, 4, 30, "Input"],
+Cell[2096, 75, 637, 19, 73, "Output"]
+}, Open  ]],
+Cell[2748, 97, 232, 6, 68, "Text"],
+Cell[CellGroupData[{
+Cell[3005, 107, 154, 3, 30, "Input"],
+Cell[3162, 112, 650, 20, 73, "Output"]
+}, Open  ]],
+Cell[3827, 135, 139, 3, 30, "Text"],
+Cell[3969, 140, 240, 7, 30, "Text"],
+Cell[4212, 149, 144, 4, 30, "Input"],
+Cell[4359, 155, 102, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[4486, 160, 160, 4, 30, "Input"],
+Cell[4649, 166, 277, 9, 59, "Output"]
+}, Open  ]],
+Cell[4941, 178, 150, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[5116, 185, 430, 12, 69, "Input"],
+Cell[5549, 199, 200, 6, 59, "Output"]
+}, Open  ]],
+Cell[5764, 208, 87, 1, 30, "Text"],
+Cell[5854, 211, 93, 1, 30, "Text"],
+Cell[5950, 214, 146, 3, 30, "Input"],
+Cell[6099, 219, 154, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[6278, 226, 202, 5, 30, "Input"],
+Cell[6483, 233, 661, 19, 73, "Output"]
+}, Open  ]],
+Cell[7159, 255, 682, 11, 87, "Text"],
+Cell[CellGroupData[{
+Cell[7866, 270, 252, 4, 30, "Text"],
+Cell[8121, 276, 925, 26, 109, "Input"],
+Cell[9049, 304, 87, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[9161, 309, 275, 6, 30, "Input"],
+Cell[9439, 317, 249, 7, 59, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
