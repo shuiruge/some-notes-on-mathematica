@@ -10,61 +10,185 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      6050,        207]
-NotebookOptionsPosition[      4907,        160]
-NotebookOutlinePosition[      5243,        175]
-CellTagsIndexPosition[      5200,        172]
+NotebookDataLength[      8924,        281]
+NotebookOptionsPosition[      7447,        224]
+NotebookOutlinePosition[      7782,        239]
+CellTagsIndexPosition[      7739,        236]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["For instance", "Section",
- CellChangeTimes->{{3.619489473684832*^9, 3.619489480531307*^9}}],
+Cell["What\[CloseCurlyQuote]s This", "Section",
+ CellChangeTimes->{{3.619515206686789*^9, 3.619515213576795*^9}}],
+
+Cell[TextData[{
+ "Generally, when doing calculation in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " or, especially, reading papers, we usually staring at a notation and just \
+can not remember what it denotes for (since there\[CloseCurlyQuote]re quite a \
+lot of notations, such as, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Alpha]", "1"], ",", " ", 
+    SubscriptBox["\[Alpha]", "2"], ",", " ", "\[Ellipsis]"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ")."
+}], "Text",
+ CellChangeTimes->{{3.619513332997649*^9, 3.619513414147033*^9}, {
+  3.619513486851598*^9, 3.619513589403259*^9}}],
+
+Cell["\<\
+So, convinently, we can write a simple function acting as dictionary, by \
+which we can check out what a notation, once we declared before, is denoting \
+for, with the declaration being a list of words, which is long enough to make \
+things clear. Anyway, no one want to deploy a long name for a quantity as its \
+notation, which lose the the spirit of the existence of notations.\
+\>", "Text",
+ CellChangeTimes->{{3.61951364325099*^9, 3.619513929924352*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For Instance", "Section",
+ CellChangeTimes->{{3.619489473684832*^9, 3.619489480531307*^9}, {
+  3.619515215943838*^9, 3.619515217130772*^9}}],
 
 Cell[CellGroupData[{
 
 Cell["\<\
-For dictionary[], for dic[] for short:\
+For declareNotation[notation, declaration]:\
 \>", "Subsection",
- CellChangeTimes->{{3.618729815374124*^9, 3.618729816174465*^9}, {
-  3.619489501044788*^9, 3.619489520658349*^9}}],
+ CellChangeTimes->{{3.619489538591515*^9, 3.619489545347683*^9}, {
+  3.619515091393253*^9, 3.619515096802359*^9}}],
+
+Cell["\<\
+Initially, just after running the package,\
+\>", "Text",
+ CellChangeTimes->{{3.619514992832809*^9, 3.619515007278424*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["dictionaryList"], "Input"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"dictionaryList", " ", "=", " ", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-      "\"\<\!\(\*SubscriptBox[\(\[Alpha]\), \(s\)]\)\>\"", ",", "\"\<r\>\""}],
-       "}"}], ",", " ", 
-     RowBox[{"{", " ", 
-      RowBox[{
-      "\"\<running of index\>\"", ",", " ", "\"\<tensor scalar ratio\>\""}], 
-      "}"}]}], "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.618729092540507*^9, 3.618729115331261*^9}, {
-   3.618729148378732*^9, 3.618729150816176*^9}, {3.618729189555312*^9, 
-   3.618729230589793*^9}, {3.618729412705903*^9, 3.618729420224556*^9}, 
-   3.61948347121757*^9}],
+ FormBox[
+  RowBox[{"{", "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.619513978031432*^9, 3.61951399751893*^9}, {
+   3.619514061270626*^9, 3.619514071474166*^9}, 3.619514579776559*^9, {
+   3.619514670917809*^9, 3.619514686675946*^9}, 3.619514876522317*^9, {
+   3.619514982654424*^9, 3.619515011896876*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Then do some declarations, such as,\
+\>", "Text",
+ CellChangeTimes->{{3.619515016902515*^9, 3.619515027007817*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"declareNotation", "[", 
+  RowBox[{
+  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
+   "\"\<index of Ps\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"declareNotation", "[", 
+  RowBox[{"\"\<r\>\"", ",", " ", "\"\<tensor scalar ratio\>\""}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"declareNotation", "[", 
+  RowBox[{
+  "\"\<\!\(\*SubscriptBox[\(\[Alpha]\), \(s\)]\)\>\"", ",", " ", 
+   "\"\<the running of \!\(\*SubscriptBox[\(n\), \(s\)]\)\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.618733674500547*^9, 3.618733734083973*^9}, {
+  3.619514002193487*^9, 3.619514038156847*^9}, {3.619514085977604*^9, 
+  3.619514094668999*^9}}],
+
+Cell["Now, the list becomes,", "Text",
+ CellChangeTimes->{{3.619515031499994*^9, 3.61951503797393*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["dictionaryList"], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\<\"\\!\\(\\*SubscriptBox[\\(n\\), \\(s\\)]\\)\"\>", "\<\"r\"\>", \
+"\<\"\\!\\(\\*SubscriptBox[\\(\[Alpha]\\), \\(s\\)]\\)\"\>"},
+     {"\<\"index of Ps\"\>", "\<\"tensor scalar ratio\"\>", "\<\"the running \
+of \\!\\(\\*SubscriptBox[\\(n\\), \\(s\\)]\\)\"\>"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733956789354*^9, 3.619483780747049*^9, 
+  3.61951410320159*^9, 3.61951460330781*^9, 3.619514689637997*^9, 
+  3.619514830361387*^9, 3.619514878572857*^9, 3.619514909599846*^9, 
+  3.619514947966516*^9}]
+}, Open  ]],
+
+Cell["If the notation has been used,", "Text",
+ CellChangeTimes->{{3.619515044993361*^9, 3.619515055689168*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"dictionaryString", "[", 
+ RowBox[{"declareNotation", "[", 
+  RowBox[{
+  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
+   "\"\<index of Ps\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox["\<\"This notation has already existed, which has been: \\\"index of \
+Ps\\\".\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733966008856*^9, 3.61948378112484*^9, 
+  3.619514696879326*^9, 3.619514831632479*^9, 3.619514879917992*^9, 
+  3.61951491066785*^9, 3.619514949108069*^9}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+For dictionary[notation], for dic[notation] for short:\
+\>", "Subsection",
+ CellChangeTimes->{{3.618729815374124*^9, 3.618729816174465*^9}, {
+  3.619489501044788*^9, 3.619489520658349*^9}, {3.61951508512591*^9, 
+  3.619515089374859*^9}}],
+
+Cell["\<\
+You can use dictionary[notation] to find out which quantity this notation \
+denotes for, such as, for our instance,\
+\>", "Text",
+ CellChangeTimes->{{3.619515074950704*^9, 3.619515132957728*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dictionary", "[", 
   "\"\<\!\(\*SubscriptBox[\(\[Alpha]\), \(s\)]\)\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.618729116960028*^9, 3.618729139184954*^9}, {
-  3.618729235391943*^9, 3.618729237283145*^9}, {3.618733180200505*^9, 
-  3.618733180627327*^9}, {3.618733285038575*^9, 3.618733285753104*^9}, {
-  3.619483507850653*^9, 3.619483510702038*^9}}],
+   3.618729235391943*^9, 3.618729237283145*^9}, {3.618733180200505*^9, 
+   3.618733180627327*^9}, {3.618733285038575*^9, 3.618733285753104*^9}, {
+   3.619483507850653*^9, 3.619483510702038*^9}, 3.619514971703156*^9}],
 
 Cell[BoxData[
  FormBox["\<\"running of index\"\>", TraditionalForm]], "Output",
  CellChangeTimes->{
   3.61873318276333*^9, {3.618733262895839*^9, 3.618733287782565*^9}, 
    3.61873393575808*^9, 3.619483474829396*^9, {3.619483504914889*^9, 
-   3.619483511107367*^9}, 3.619483779230424*^9}]
+   3.619483511107367*^9}, 3.619483779230424*^9, 3.619514972579214*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -79,6 +203,11 @@ Cell[BoxData[
   3.618733939184576*^9, 3.6194837796608*^9}]
 }, Open  ]],
 
+Cell["\<\
+If it has not been declared yet,\
+\>", "Text",
+ CellChangeTimes->{{3.619515139629699*^9, 3.619515166785329*^9}}],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -90,76 +219,11 @@ Cell[BoxData[
  CellChangeTimes->{3.618733296990631*^9, 3.618733941298913*^9, 
   3.61948378007476*^9}]
 }, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["For declareNotation[]:", "Subsection",
- CellChangeTimes->{{3.619489538591515*^9, 3.619489545347683*^9}}],
-
-Cell[BoxData[
- RowBox[{"declareNotation", "[", 
-  RowBox[{
-  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
-   "\"\<index of Ps\>\""}], "]"}]], "Input",
- CellChangeTimes->{{3.618733674500547*^9, 3.618733734083973*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["dictionaryList"], "Input"],
-
-Cell[BoxData[
- FormBox[
-  RowBox[{"(", "\[NoBreak]", GridBox[{
-     {"\<\"\\!\\(\\*SubscriptBox[\\(\[Alpha]\\), \\(s\\)]\\)\"\>", \
-"\<\"r\"\>", "\<\"\\!\\(\\*SubscriptBox[\\(n\\), \\(s\\)]\\)\"\>"},
-     {"\<\"running of index\"\>", "\<\"tensor scalar ratio\"\>", "\<\"index \
-of Ps\"\>"}
-    },
-    GridBoxAlignment->{
-     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-      "RowsIndexed" -> {}},
-    GridBoxSpacings->{"Columns" -> {
-        Offset[0.27999999999999997`], {
-         Offset[0.7]}, 
-        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-        Offset[0.2], {
-         Offset[0.4]}, 
-        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-  TraditionalForm]], "Output",
- CellChangeTimes->{3.618733956789354*^9, 3.619483780747049*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"declareNotation", "[", 
-  RowBox[{
-  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
-   "\"\<index of Ps\>\""}], "]"}]], "Input"],
-
-Cell[BoxData[
- FormBox["\<\"This notation has already existed.\"\>", 
-  TraditionalForm]], "Output",
- CellChangeTimes->{3.618733966008856*^9, 3.61948378112484*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"dic", "[", "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", 
-  "]"}]], "Input",
- CellChangeTimes->{{3.61873397637452*^9, 3.618733977200826*^9}}],
-
-Cell[BoxData[
- FormBox["\<\"index of Ps\"\>", TraditionalForm]], "Output",
- CellChangeTimes->{3.618733978121544*^9, 3.619483781579451*^9}]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
 }, Open  ]]
 },
-WindowSize->{740, 455},
-WindowMargins->{{Automatic, 86}, {Automatic, 29}},
+WindowSize->{1024, 600},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
 StyleDefinitions->"Default.nb"
 ]
@@ -175,39 +239,49 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 97, 1, 72, "Section"],
-Cell[CellGroupData[{
-Cell[701, 27, 183, 4, 38, "Subsection"],
-Cell[887, 33, 630, 16, 30, "Input"],
-Cell[CellGroupData[{
-Cell[1542, 53, 379, 6, 30, "Input"],
-Cell[1924, 61, 288, 5, 31, "Output"]
+Cell[579, 22, 113, 1, 72, "Section"],
+Cell[695, 25, 631, 17, 49, "Text"],
+Cell[1329, 44, 469, 7, 68, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2249, 71, 106, 2, 30, "Input"],
-Cell[2358, 75, 191, 3, 31, "Output"]
-}, Open  ]],
+Cell[1835, 56, 146, 2, 72, "Section"],
 Cell[CellGroupData[{
-Cell[2586, 83, 130, 2, 30, "Input"],
-Cell[2719, 87, 170, 3, 31, "Output"]
+Cell[2006, 62, 188, 4, 37, "Subsection"],
+Cell[2197, 68, 132, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[2354, 75, 40, 0, 30, "Input"],
+Cell[2397, 77, 333, 6, 31, "Output"]
+}, Open  ]],
+Cell[2745, 86, 125, 3, 30, "Text"],
+Cell[2873, 91, 673, 15, 69, "Input"],
+Cell[3549, 108, 103, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[3677, 113, 40, 0, 30, "Input"],
+Cell[3720, 115, 1014, 22, 50, "Output"]
+}, Open  ]],
+Cell[4749, 140, 112, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[4886, 145, 162, 4, 30, "Input"],
+Cell[5051, 151, 314, 5, 31, "Output"]
 }, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[5414, 162, 247, 5, 30, "Subsection"],
+Cell[5664, 169, 205, 4, 30, "Text"],
+Cell[CellGroupData[{
+Cell[5894, 177, 398, 6, 30, "Input"],
+Cell[6295, 185, 310, 5, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2938, 96, 110, 1, 37, "Subsection"],
-Cell[3051, 99, 228, 5, 30, "Input"],
-Cell[CellGroupData[{
-Cell[3304, 108, 40, 0, 30, "Input"],
-Cell[3347, 110, 812, 19, 49, "Output"]
+Cell[6642, 195, 106, 2, 30, "Input"],
+Cell[6751, 199, 191, 3, 31, "Output"]
 }, Open  ]],
+Cell[6957, 205, 122, 3, 30, "Text"],
 Cell[CellGroupData[{
-Cell[4196, 134, 162, 4, 30, "Input"],
-Cell[4361, 140, 163, 3, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4561, 148, 165, 3, 30, "Input"],
-Cell[4729, 153, 138, 2, 31, "Output"]
+Cell[7104, 212, 130, 2, 30, "Input"],
+Cell[7237, 216, 170, 3, 31, "Output"]
 }, Open  ]]
-}, Open  ]]
+}, Closed]]
 }, Open  ]]
 }
 ]

@@ -23,6 +23,8 @@ declareNotation[notation_, declaration_] :=
 Module[{result},
 	If[Head@notation=!=String||Head@declaration=!=String,
 		result = "Please use STRING as inputs.",
-		If[MemberQ[dictionaryList[[1]], notation] == True,
-			result = "This notation has already existed.",
-			dictionaryList = {Append[dictionaryList[[1]], notation], Append[dictionaryList[[2]], declaration]};]]]
+		If[dictionaryList === {}(* if it dictionaryList is empty. *),
+			dictionaryList = {{notation}, {declaration}};,
+			If[MemberQ[dictionaryList[[1]], notation] == True(* if it is already exist. *),
+				result = "This notation has already existed, which has been: "<>"\""<>dictionaryList[[2, Position[dictionaryList[[1]], notation][[1,1]]]]<>"\".",
+				dictionaryList = {Append[dictionaryList[[1]], notation], Append[dictionaryList[[2]], declaration]};]]]]
