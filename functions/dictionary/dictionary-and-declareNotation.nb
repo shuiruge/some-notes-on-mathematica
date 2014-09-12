@@ -1,0 +1,216 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6050,        207]
+NotebookOptionsPosition[      4907,        160]
+NotebookOutlinePosition[      5243,        175]
+CellTagsIndexPosition[      5200,        172]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["For instance", "Section",
+ CellChangeTimes->{{3.619489473684832*^9, 3.619489480531307*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+For dictionary[], for dic[] for short:\
+\>", "Subsection",
+ CellChangeTimes->{{3.618729815374124*^9, 3.618729816174465*^9}, {
+  3.619489501044788*^9, 3.619489520658349*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dictionaryList", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<\!\(\*SubscriptBox[\(\[Alpha]\), \(s\)]\)\>\"", ",", "\"\<r\>\""}],
+       "}"}], ",", " ", 
+     RowBox[{"{", " ", 
+      RowBox[{
+      "\"\<running of index\>\"", ",", " ", "\"\<tensor scalar ratio\>\""}], 
+      "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.618729092540507*^9, 3.618729115331261*^9}, {
+   3.618729148378732*^9, 3.618729150816176*^9}, {3.618729189555312*^9, 
+   3.618729230589793*^9}, {3.618729412705903*^9, 3.618729420224556*^9}, 
+   3.61948347121757*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dictionaryString", "[", 
+  "\"\<\!\(\*SubscriptBox[\(\[Alpha]\), \(s\)]\)\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.618729116960028*^9, 3.618729139184954*^9}, {
+  3.618729235391943*^9, 3.618729237283145*^9}, {3.618733180200505*^9, 
+  3.618733180627327*^9}, {3.618733285038575*^9, 3.618733285753104*^9}, {
+  3.619483507850653*^9, 3.619483510702038*^9}}],
+
+Cell[BoxData[
+ FormBox["\<\"running of index\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.61873318276333*^9, {3.618733262895839*^9, 3.618733287782565*^9}, 
+   3.61873393575808*^9, 3.619483474829396*^9, {3.619483504914889*^9, 
+   3.619483511107367*^9}, 3.619483779230424*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dic", "[", "\"\<r\>\"", "]"}]], "Input",
+ CellChangeTimes->{3.618729775307477*^9}],
+
+Cell[BoxData[
+ FormBox["\<\"tensor scalar ratio\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{3.618729775813518*^9, 3.618733290359425*^9, 
+  3.618733939184576*^9, 3.6194837796608*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dic", "[", "\"\<f\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.618733291793954*^9, 3.618733296278627*^9}}],
+
+Cell[BoxData[
+ FormBox["\<\"No such a notation.\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733296990631*^9, 3.618733941298913*^9, 
+  3.61948378007476*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For declareNotation[]:", "Subsection",
+ CellChangeTimes->{{3.619489538591515*^9, 3.619489545347683*^9}}],
+
+Cell[BoxData[
+ RowBox[{"declareNotation", "[", 
+  RowBox[{
+  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
+   "\"\<index of Ps\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.618733674500547*^9, 3.618733734083973*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["dictionaryList"], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\<\"\\!\\(\\*SubscriptBox[\\(\[Alpha]\\), \\(s\\)]\\)\"\>", \
+"\<\"r\"\>", "\<\"\\!\\(\\*SubscriptBox[\\(n\\), \\(s\\)]\\)\"\>"},
+     {"\<\"running of index\"\>", "\<\"tensor scalar ratio\"\>", "\<\"index \
+of Ps\"\>"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733956789354*^9, 3.619483780747049*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"declareNotation", "[", 
+  RowBox[{
+  "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", ",", " ", 
+   "\"\<index of Ps\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox["\<\"This notation has already existed.\"\>", 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733966008856*^9, 3.61948378112484*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dic", "[", "\"\<\!\(\*SubscriptBox[\(n\), \(s\)]\)\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.61873397637452*^9, 3.618733977200826*^9}}],
+
+Cell[BoxData[
+ FormBox["\<\"index of Ps\"\>", TraditionalForm]], "Output",
+ CellChangeTimes->{3.618733978121544*^9, 3.619483781579451*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 455},
+WindowMargins->{{Automatic, 86}, {Automatic, 29}},
+FrontEndVersion->"8.0 for Linux x86 (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 97, 1, 72, "Section"],
+Cell[CellGroupData[{
+Cell[701, 27, 183, 4, 38, "Subsection"],
+Cell[887, 33, 630, 16, 30, "Input"],
+Cell[CellGroupData[{
+Cell[1542, 53, 379, 6, 30, "Input"],
+Cell[1924, 61, 288, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2249, 71, 106, 2, 30, "Input"],
+Cell[2358, 75, 191, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2586, 83, 130, 2, 30, "Input"],
+Cell[2719, 87, 170, 3, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2938, 96, 110, 1, 37, "Subsection"],
+Cell[3051, 99, 228, 5, 30, "Input"],
+Cell[CellGroupData[{
+Cell[3304, 108, 40, 0, 30, "Input"],
+Cell[3347, 110, 812, 19, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4196, 134, 162, 4, 30, "Input"],
+Cell[4361, 140, 163, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4561, 148, 165, 3, 30, "Input"],
+Cell[4729, 153, 138, 2, 31, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
